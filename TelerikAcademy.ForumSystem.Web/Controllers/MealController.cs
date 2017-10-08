@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Microsoft.AspNet.Identity.Owin;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 using TelerikAcademy.ForumSystem.Data.Model;
 using TelerikAcademy.ForumSystem.Services;
@@ -19,6 +21,8 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
             this.mapper = mapper;
             this.ordersService = ordersService;
         }
+        
+
         [Authorize]
         [HttpGet]
         public ActionResult Meals()
@@ -43,14 +47,7 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
 
             return this.RedirectToAction("Meals");
         }
-        [Authorize]
-        public ActionResult Order(string userName, string meal)
-        {
-            //this.postsService.Update()
-            Order order = new Order() { Title = meal, UserName = userName };
-            this.ordersService.Add(order);
-            return this.RedirectToAction("Meals");
-            //return this.RedirectToAction("Meals");
-        }
+        
+        
     }
 }

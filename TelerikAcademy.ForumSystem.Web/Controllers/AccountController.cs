@@ -160,6 +160,7 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
 
                 var user = new User
                 {
+                    Address = model.Address,
                     UserName = model.Email,
                     Email = model.Email,
                     EmailConfirmed = false,
@@ -372,7 +373,7 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
             {
                 return RedirectToAction("Index", "Manage");
             }
-
+            
             if (ModelState.IsValid)
             {
                 // Get the information about the user from the external login provider
@@ -442,6 +443,7 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
         {
             UserManager.RemoveFromRole(userId, "User");
             UserManager.AddToRole(userId, "Employee");
+            
             return RedirectToAction("Index", "Home");
         }
 

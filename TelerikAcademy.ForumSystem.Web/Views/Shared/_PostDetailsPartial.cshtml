@@ -9,5 +9,5 @@
     <p>@Model.Content</p>
     <p>@Model.Price $</p>
 
-    @Html.ActionLink("Order", "Order", "Meal", new { userName = User.Identity.Name, meal = Model.Title }, htmlAttributes: new { id = "Order" })
+    @Html.ActionLink("Order", "Order", "Order", new { userName = User.Identity.Name, meal = Model.Title }, htmlAttributes: new { id = "Order" })
 </div>
