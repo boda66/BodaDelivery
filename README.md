@@ -1,2 +1,0 @@
-# BodaDelivery
-ASP.NET MVC

@@ -1,0 +1,38 @@
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.dll.config
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.dll
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.pdb
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\EntityFramework.dll
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.Model.dll
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.Model.pdb
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.Model.dll.config
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\EntityFramework.xml
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.csprojResolveAssemblyReference.cache
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.Migrations.Initial.resources
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.csproj.GenerateResource.Cache
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.dll
+C:\Users\boda66\Desktop\New folder\ASP.NET-MVC\resources\02. ASP.NET-MVC-Essentials\Demo\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.pdb
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.dll.config
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.dll
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.pdb
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\EntityFramework.dll
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.Model.dll
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.Model.pdb
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\TelerikAcademy.ForumSystem.Data.Model.dll.config
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\EntityFramework.xml
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.csprojResolveAssemblyReference.cache
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.dll
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.pdb
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.Migrations.Initial.resources
+C:\Users\boda66\Desktop\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.csproj.GenerateResource.Cache
