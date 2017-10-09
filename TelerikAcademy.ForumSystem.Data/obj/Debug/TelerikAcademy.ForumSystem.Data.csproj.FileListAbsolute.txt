@@ -51,7 +51,7 @@ C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.csprojResolveAssemblyReference.cache
-C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.Migrations.Initial.resources
-C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.csproj.GenerateResource.Cache
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.dll
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.pdb
+C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.Migrations.Initial.resources
+C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Data\obj\Debug\TelerikAcademy.ForumSystem.Data.csproj.GenerateResource.Cache

@@ -1,0 +1,22 @@
+﻿@using TelerikAcademy.ForumSystem.Web.Models.Home
+@model OrdersViewModel
+
+@{
+    ViewBag.Title = "Orders Page";
+}
+@if (!User.IsInRole("Employee"))
+{
+    Html.RenderAction("Login", "Account");
+}
+else
+{
+<hr />
+<div class="row">
+    @foreach (var order in Model.Order)
+    {
+       <p>Username: @order.UserName,   Meal: @order.Title       @Html.ActionLink("TakeOrder", "TakeOrder", "Order", new { id = order.id }, htmlAttributes: new { id = "Order" })</p>
+    }
+</div>
+
+<hr />
+}

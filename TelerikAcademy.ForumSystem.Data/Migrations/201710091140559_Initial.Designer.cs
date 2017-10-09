@@ -13,7 +13,7 @@ namespace TelerikAcademy.ForumSystem.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201710081121264_Initial"; }
+            get { return "201710091140559_Initial"; }
         }
         
         string IMigrationMetadata.Source

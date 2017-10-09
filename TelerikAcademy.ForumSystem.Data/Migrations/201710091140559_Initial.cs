@@ -8,6 +8,20 @@ namespace TelerikAcademy.ForumSystem.Data.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.Applies",
+                c => new
+                    {
+                        Id = c.Guid(nullable: false),
+                        UserName = c.String(),
+                        IsDeleted = c.Boolean(nullable: false),
+                        DeletedOn = c.DateTime(),
+                        CreatedOn = c.DateTime(),
+                        ModifiedOn = c.DateTime(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .Index(t => t.IsDeleted);
+            
+            CreateTable(
                 "dbo.Orders",
                 c => new
                     {
@@ -136,6 +150,7 @@ namespace TelerikAcademy.ForumSystem.Data.Migrations
             DropIndex("dbo.Meals", new[] { "User_Id" });
             DropIndex("dbo.Meals", new[] { "IsDeleted" });
             DropIndex("dbo.Orders", new[] { "IsDeleted" });
+            DropIndex("dbo.Applies", new[] { "IsDeleted" });
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
@@ -143,6 +158,7 @@ namespace TelerikAcademy.ForumSystem.Data.Migrations
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.Meals");
             DropTable("dbo.Orders");
+            DropTable("dbo.Applies");
         }
     }
 }

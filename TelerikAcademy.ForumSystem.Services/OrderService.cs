@@ -32,5 +32,11 @@ namespace TelerikAcademy.ForumSystem.Services
             this.orderRepo.Update(order);
             this.context.Commit();
         }
+
+        public void Delete(Order order)
+        {
+            this.orderRepo.Delete(order);
+            this.context.Commit();
+        }
     }
 }

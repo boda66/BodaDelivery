@@ -1,0 +1,22 @@
+﻿@using TelerikAcademy.ForumSystem.Web.Models.Home
+@model OrdersViewModel
+
+@{
+    ViewBag.Title = "Orders Page";
+}
+@if (!User.IsInRole("User"))
+{
+    Html.RenderAction("Login", "Account");
+}
+else
+{
+<hr />
+<div class="row">
+    @foreach (var order in Model.Order)
+    {
+       <p>Username: @order.UserName,   Meal: @order.Title  </p>
+    }
+</div>
+
+<hr />
+}

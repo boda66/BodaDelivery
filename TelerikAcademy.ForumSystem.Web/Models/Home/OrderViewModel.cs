@@ -11,6 +11,7 @@ namespace TelerikAcademy.ForumSystem.Web.Models.Home
 {
     public class OrderViewModel : IMapFrom<Order>, IHaveCustomMappings
     {
+        public Guid id { get; set; }
 
         public string Title { get; set; }
 

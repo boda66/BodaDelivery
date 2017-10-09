@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.AspNet.Identity.Owin;
+using System;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -31,5 +32,49 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
             return this.RedirectToAction("Meals", "Meal");
         }
         
+        [Authorize]
+        public ActionResult AllOrders()
+        {
+            var order = this.ordersService
+                .GetAll()
+                .ProjectTo<OrderViewModel>()
+                .ToList();
+
+            var viewModel = new OrdersViewModel()
+            {
+                Order = order
+            };
+
+            return View(viewModel);
+        }
+        [Authorize]
+        public ActionResult TakeOrder(Guid id)
+        {
+            var order = this.ordersService
+                .GetAll()
+                .Where(x => x.Id == id)
+                .First();
+
+            this.ordersService.Delete(order);
+
+            return this.RedirectToAction("Index", "Home");
+        }
+        
+        [Authorize]
+        public ActionResult MyOrders()
+        {
+            var order = this.ordersService
+                .GetAll()
+                .Where(x => x.UserName == User.Identity.Name)
+                .ProjectTo<OrderViewModel>()
+                .ToList();
+
+            var viewModel = new OrdersViewModel()
+            {
+                Order = order
+            };
+
+            return View(viewModel);
+        }
     }
 }

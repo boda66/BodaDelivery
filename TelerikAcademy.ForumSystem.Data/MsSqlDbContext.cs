@@ -18,6 +18,8 @@ namespace TelerikAcademy.ForumSystem.Data
 
         public IDbSet<Order> Orders { get; set; }
 
+        public IDbSet<Applies> Applies { get; set; }
+
         public override int SaveChanges()
         {
             this.ApplyAuditInfoRules();

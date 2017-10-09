@@ -8,5 +8,7 @@ namespace TelerikAcademy.ForumSystem.Services
         IQueryable<Order> GetAll();
 
         void Add(Order order);
+
+        void Delete(Order order);
     }
 }
