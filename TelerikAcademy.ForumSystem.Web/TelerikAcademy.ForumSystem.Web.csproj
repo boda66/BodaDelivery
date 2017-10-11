@@ -222,9 +222,13 @@
     <Compile Include="Infrastructure\IMapFrom.cs" />
     <Compile Include="Infrastructure\QueryableExtensions.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Home\AppliesViewModel.cs" />
+    <Compile Include="Models\Home\UsersViewModel.cs" />
     <Compile Include="Models\Home\OrdersViewModel.cs" />
     <Compile Include="Models\Home\MealsViewModel.cs" />
     <Compile Include="Models\Home\HomeViewModel.cs" />
+    <Compile Include="Models\Home\ApplyViewModel.cs" />
+    <Compile Include="Models\Home\UserViewModel.cs" />
     <Compile Include="Models\Home\OrderViewModel.cs" />
     <Compile Include="Models\Home\PostViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -288,6 +292,9 @@
     <Content Include="Views\Meal\Meals.cshtml" />
     <Content Include="Views\Order\AllOrders.cshtml" />
     <Content Include="Views\Order\MyOrders.cshtml" />
+    <Content Include="Views\Job\AdminApplies.cshtml" />
+    <Content Include="Views\Job\ManageEmployees.cshtml" />
+    <Content Include="Views\Meal\AddMeal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

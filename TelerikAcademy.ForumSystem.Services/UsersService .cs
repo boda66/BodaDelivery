@@ -5,30 +5,31 @@ using TelerikAcademy.ForumSystem.Data.SaveContext;
 
 namespace TelerikAcademy.ForumSystem.Services
 {
-    public class MealService : IMealService
+    public class UsersService : IUsersService
     {
-        private readonly IEfRepository<Meal> mealRepo;
+        private readonly IEfRepository<User> userRepo;
         private readonly ISaveContext context;
 
-        public MealService(IEfRepository<Meal> mealRepo, ISaveContext context)
+        public UsersService(IEfRepository<User> userRepo, ISaveContext context)
         {
-            this.mealRepo = mealRepo;
+            this.userRepo = userRepo;
             this.context = context;
         }
 
-        public IQueryable<Meal> GetAll()
+        public IQueryable<User> GetAll()
         {
-            return this.mealRepo.All;
+            return this.userRepo.All;
         }
-
-        public void Update(Meal meal)
+        
+        public void Update(User user)
         {
-            this.mealRepo.Update(meal);
+            this.userRepo.Update(user);
             this.context.Commit();
         }
-        public void Add(Meal meal)
+
+        public void Delete(User user)
         {
-            this.mealRepo.Add(meal);
+            this.userRepo.Delete(user);
             this.context.Commit();
         }
     }

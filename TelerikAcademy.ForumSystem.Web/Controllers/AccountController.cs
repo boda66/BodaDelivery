@@ -438,12 +438,20 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
             base.Dispose(disposing);
         }
         //User user, string role
-        
-        public virtual ActionResult ChangeRole(string userId)
+        [Authorize]
+        public virtual ActionResult ChangeRole(string userId, Guid id)
         {
             UserManager.RemoveFromRole(userId, "User");
             UserManager.AddToRole(userId, "Employee");
             
+            return RedirectToAction("Reject", "Job", new { id = id } );
+        }
+        [Authorize]
+        public virtual ActionResult Fire(string userId)
+        {
+            UserManager.RemoveFromRole(userId, "Employee");
+            UserManager.AddToRole(userId, "User");
+
             return RedirectToAction("Index", "Home");
         }
 

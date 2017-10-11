@@ -21,5 +21,3 @@ else
         
     </ul>
 }
-@User.IsInRole("Employee");
-<li>@Html.ActionLink("ChangeRole", "ChangeRole", "Account", new { userId = User.Identity.GetUserId() }, htmlAttributes: new { id = "ChangeRole" })</li>

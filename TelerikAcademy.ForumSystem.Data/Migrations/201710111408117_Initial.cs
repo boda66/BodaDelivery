@@ -13,6 +13,7 @@ namespace TelerikAcademy.ForumSystem.Data.Migrations
                     {
                         Id = c.Guid(nullable: false),
                         UserName = c.String(),
+                        UserId = c.String(),
                         IsDeleted = c.Boolean(nullable: false),
                         DeletedOn = c.DateTime(),
                         CreatedOn = c.DateTime(),

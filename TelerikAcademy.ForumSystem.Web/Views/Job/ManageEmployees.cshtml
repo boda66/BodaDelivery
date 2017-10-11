@@ -1,0 +1,22 @@
+﻿@using TelerikAcademy.ForumSystem.Web.Models.Home
+@model UsersViewModel
+
+@{
+    ViewBag.Title = "Admin Page";
+}
+@if (!User.IsInRole("Admin"))
+{
+    Html.RenderAction("Login", "Account");
+}
+else
+{
+<hr />
+<div class="row">
+    @foreach (var user in Model.Users)
+    {
+       <p>Username: @user.UserName       @Html.ActionLink("Fire", "Fire", "Account", new { userId = user.Id }, htmlAttributes: new { id = "Fire" }) </p>
+    }
+</div>
+
+<hr />
+}

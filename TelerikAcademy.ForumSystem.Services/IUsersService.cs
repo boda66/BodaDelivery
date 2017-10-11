@@ -3,10 +3,10 @@ using TelerikAcademy.ForumSystem.Data.Model;
 
 namespace TelerikAcademy.ForumSystem.Services
 {
-    public interface IMealService
+    public interface IUsersService
     {
-        IQueryable<Meal> GetAll();
-
-        void Add(Meal meal);
+        IQueryable<User> GetAll();
+        
+        void Delete(User order);
     }
 }

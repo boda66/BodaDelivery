@@ -14,7 +14,7 @@ else
 <div class="row">
     @foreach (var order in Model.Order)
     {
-       <p>Username: @order.UserName,   Meal: @order.Title       @Html.ActionLink("TakeOrder", "TakeOrder", "Order", new { id = order.id }, htmlAttributes: new { id = "Order" })</p>
+       <p>Username: @order.UserName, Address: @order.Address,   Meal: @order.Title       @Html.ActionLink("TakeOrder", "TakeOrder", "Order", new { id = order.id }, htmlAttributes: new { id = "Order" })</p>
     }
 </div>
 

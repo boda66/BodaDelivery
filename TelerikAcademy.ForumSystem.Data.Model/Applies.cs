@@ -6,7 +6,9 @@ namespace TelerikAcademy.ForumSystem.Data.Model
     public class Applies : DataModel
     {
         public string UserName { get; set; }
-        
+
+        public string UserId { get; set; }
+
         //public virtual User Author { get; set; }
     }
 }

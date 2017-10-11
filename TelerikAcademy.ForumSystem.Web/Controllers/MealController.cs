@@ -47,7 +47,17 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
 
             return this.RedirectToAction("Meals");
         }
-        
-        
+
+        [Authorize]
+        public ActionResult AddMeal()
+        {
+            return View();
+        }
+        [Authorize]
+        public ActionResult Add(MealViewModel mealModel)
+        {
+            this.mealsService.Add(new Meal() { Title = mealModel.Title, Image = mealModel.Image, Price = mealModel.Price, Content = mealModel.Content });
+            return this.RedirectToAction("Index", "Home");
+        }
     }
 }

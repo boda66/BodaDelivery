@@ -82,7 +82,12 @@
                         </text>
                     }
                 }*@
+           
+                
+
         </dd>
+            @if (User.IsInRole("User"))
+            {
         <dt>Apply For Job:</dt>
         <dd>
             <p>
@@ -90,5 +95,6 @@
             </p>
            
         </dd>
+            }
     </dl>
 </div>

@@ -15,18 +15,24 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
     {
         private readonly IMapper mapper;
         private readonly IOrderService ordersService;
-        public OrderController(IMapper mapper, IOrderService ordersService)
+        private readonly IUsersService usersService;
+        public OrderController(IMapper mapper, IOrderService ordersService, IUsersService usersService)
         {
             this.mapper = mapper;
             this.ordersService = ordersService;
+            this.usersService = usersService;
         }
         
         [Authorize]
         public ActionResult Order(string userName, string meal)
         {
             //this.postsService.Update()
-           
-            Order order = new Order() { Title = meal, Address = null, UserName = userName };
+            var users = this.usersService
+                 .GetAll()
+                 .Where(x => x.UserName == userName)
+                 .First();
+
+            Order order = new Order() { Title = meal, Address = users.Address, UserName = userName };
             this.ordersService.Add(order);
             
             return this.RedirectToAction("Meals", "Meal");
