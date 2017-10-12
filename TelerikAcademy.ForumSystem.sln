@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAcademy.ForumSystem.Web", "TelerikAcademy.ForumSystem.Web\TelerikAcademy.ForumSystem.Web.csproj", "{6856C21D-0966-4ED5-A4ED-5ECF6CA60E06}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{39414B78-198F-4DBF-B683-45AE77D3299D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAcademy.ForumSystem.Services", "TelerikAcademy.ForumSystem.Services\TelerikAcademy.ForumSystem.Services.csproj", "{FB051718-9592-4803-AB3D-7C975D93EBD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAcademy.ForumSystem.Web.Test", "TelerikAcademy.ForumSystem.Web.Test\TelerikAcademy.ForumSystem.Web.Test.csproj", "{28F4146D-821C-4325-BE03-F7C54832D9F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{FB051718-9592-4803-AB3D-7C975D93EBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB051718-9592-4803-AB3D-7C975D93EBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB051718-9592-4803-AB3D-7C975D93EBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F4146D-821C-4325-BE03-F7C54832D9F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F4146D-821C-4325-BE03-F7C54832D9F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F4146D-821C-4325-BE03-F7C54832D9F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F4146D-821C-4325-BE03-F7C54832D9F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
