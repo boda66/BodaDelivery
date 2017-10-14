@@ -1,0 +1,12 @@
+﻿@using TelerikAcademy.ForumSystem.Web.Models.Home
+@using Microsoft.AspNet.Identity
+
+@model MealViewModel
+
+    <h2>@Model.Title</h2>
+    <img src=@Model.Image width="150" height="150"/>
+    <p>@Model.Content</p>
+    <p>@Model.Price $</p>
+
+    @Html.ActionLink("Order", "Order", "Order", new { userName = User.Identity.Name, meal = Model.Title }, htmlAttributes: new { id = "Order" })
+

@@ -1,0 +1,18 @@
+﻿@using TelerikAcademy.ForumSystem.Web.Models.Home
+@model MealsViewModel
+
+@{
+    ViewBag.Title = "Meals Page";
+}
+<hr />
+<div class="row">
+    @foreach (var meal in Model.Meal)
+    {
+            <div class="col-md-4">
+                @Html.Partial("_PostDetailsPartial", meal)
+            </div>
+     
+    }
+</div>
+
+<hr />
