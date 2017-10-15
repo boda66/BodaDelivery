@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Bytes2you.Validation;
+using System;
 using System.Linq;
 using System.Web.Mvc;
 using TelerikAcademy.ForumSystem.Services;
@@ -14,6 +16,9 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
 
         public HomeController(IMealService mealsService, IMapper mapper)
         {
+            Guard.WhenArgument(mealsService, nameof(mealsService)).IsNull().Throw();
+            Guard.WhenArgument(mapper, nameof(mapper)).IsNull().Throw();
+
             this.mealsService = mealsService;
             this.mapper = mapper;
         }

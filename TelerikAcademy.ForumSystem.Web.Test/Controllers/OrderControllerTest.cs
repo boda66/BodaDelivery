@@ -16,6 +16,45 @@ namespace WebApplication1.Tests.Controllers
     public class OrderControllerTest
     {
         [Test]
+        public void OrderController_ShouldThrowWhenMapperServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedOrdersService = new Mock<IOrderService>();
+
+            OrderController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new OrderController(null, mockedOrdersService.Object, mockedUsersService.Object));
+        }
+        [Test]
+        public void OrderController_ShouldThrowWhenOrdersServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedOrdersService = new Mock<IOrderService>();
+
+            OrderController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new OrderController(mockedMapper.Object, null, mockedUsersService.Object));
+        }
+        [Test]
+        public void OrderController_ShouldThrowWhenUserServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedOrdersService = new Mock<IOrderService>();
+
+            OrderController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new OrderController(mockedMapper.Object, mockedOrdersService.Object, null));
+        }
+        [Test]
         public void Order_ShouldRedirectToMealsMeal()
         {
             // Arrange

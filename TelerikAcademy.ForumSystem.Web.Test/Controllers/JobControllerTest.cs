@@ -16,6 +16,46 @@ namespace WebApplication1.Tests.Controllers
     public class JobControllerTest
     {
         [Test]
+        public void JobController_ShouldThrowWhenAppliesServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedAppliesService = new Mock<IAppliesService>();
+
+            JobController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new JobController(null, mockedMapper.Object, mockedUsersService.Object));
+        }
+
+        [Test]
+        public void JobController_ShouldThrowWhenMapperServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedAppliesService = new Mock<IAppliesService>();
+
+            JobController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new JobController(mockedAppliesService.Object, null, mockedUsersService.Object));
+        }
+        [Test]
+        public void JobController_ShouldThrowWhenUserServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedAppliesService = new Mock<IAppliesService>();
+
+            JobController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new JobController(mockedAppliesService.Object, mockedMapper.Object, null));
+        }
+        [Test]
         public void Reject_ShouldRedirectToIndexHome()
         {
             // Arrange

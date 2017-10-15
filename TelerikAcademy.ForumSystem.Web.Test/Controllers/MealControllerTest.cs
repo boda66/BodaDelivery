@@ -16,6 +16,45 @@ namespace WebApplication1.Tests.Controllers
     public class MealControllerTest
     {
         [Test]
+        public void MealController_ShouldThrowWhenMealServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedMealsService = new Mock<IMealService>();
+            var mockedOrdersService = new Mock<IOrderService>();
+
+            MealController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new MealController(null, mockedMapper.Object, mockedOrdersService.Object));
+        }
+        [Test]
+        public void MealController_ShouldThrowWhenMapperServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedMealsService = new Mock<IMealService>();
+            var mockedOrdersService = new Mock<IOrderService>();
+
+            MealController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new MealController(mockedMealsService.Object,null, mockedOrdersService.Object));
+        }
+        [Test]
+        public void MealController_ShouldThrowWhenOrdersServiceIsNull()
+        {
+            // Arrange
+            var mockedMapper = new Mock<IMapper>();
+            var mockedMealsService = new Mock<IMealService>();
+            var mockedOrdersService = new Mock<IOrderService>();
+
+            MealController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new MealController(mockedMealsService.Object, mockedMapper.Object, null));
+        }
+        [Test]
         public void Meals_ShouldRenderMealsViewModel()
         {
             // Arrange

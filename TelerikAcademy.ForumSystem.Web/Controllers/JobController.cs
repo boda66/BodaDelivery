@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Bytes2you.Validation;
 using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,11 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
 
         public JobController(IAppliesService appliesService, IMapper mapper, IUsersService usersService)
         {
+            Guard.WhenArgument(appliesService, nameof(appliesService)).IsNull().Throw();
+            Guard.WhenArgument(mapper, nameof(mapper)).IsNull().Throw();
+            Guard.WhenArgument(usersService, nameof(usersService)).IsNull().Throw();
+
+
             this.appliesService = appliesService;
             this.mapper = mapper;
             this.usersService = usersService;

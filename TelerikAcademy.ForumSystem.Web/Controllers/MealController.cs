@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Bytes2you.Validation;
 using Microsoft.AspNet.Identity.Owin;
 using System.Linq;
 using System.Web;
@@ -17,6 +18,10 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
         private readonly IOrderService ordersService;
         public MealController(IMealService mealsService, IMapper mapper, IOrderService ordersService)
         {
+            Guard.WhenArgument(mealsService, nameof(mealsService)).IsNull().Throw();
+            Guard.WhenArgument(mapper, nameof(mapper)).IsNull().Throw();
+            Guard.WhenArgument(ordersService, nameof(ordersService)).IsNull().Throw();
+
             this.mealsService = mealsService;
             this.mapper = mapper;
             this.ordersService = ordersService;

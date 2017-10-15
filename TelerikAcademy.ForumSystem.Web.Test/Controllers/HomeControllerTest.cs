@@ -17,6 +17,30 @@ namespace WebApplication1.Tests.Controllers
     public class HomeControllerTest
     {
         [Test]
+        public void HomeController_ShouldThrowWhenMealServiceIsNull()
+        {
+            // Arrange
+            var mealService = new Mock<IMealService>();
+            var mapper = new Mock<IMapper>();
+
+            HomeController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new HomeController(null, mapper.Object));
+        }
+        [Test]
+        public void HomeController_ShouldThrowWhenMapperIsNull()
+        {
+            // Arrange
+            var mealService = new Mock<IMealService>();
+            var mapper = new Mock<IMapper>();
+
+            HomeController controller;
+
+            // Act && Assert
+            Assert.Throws<ArgumentNullException>(() => controller = new HomeController(mealService.Object, null));
+        }
+        [Test]
         public void Index()
         {
             // Arrange
