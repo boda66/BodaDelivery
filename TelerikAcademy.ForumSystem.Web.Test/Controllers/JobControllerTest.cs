@@ -1,19 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Web.Mvc;
-using WebApplication1;
-using TelerikAcademy.ForumSystem.Web;
 using TelerikAcademy.ForumSystem.Web.Controllers;
 using Moq;
 using TelerikAcademy.ForumSystem.Services;
 using AutoMapper;
 using NUnit.Framework;
-using AutoMapper.QueryableExtensions;
 using TelerikAcademy.ForumSystem.Web.Models.Home;
-using System.Reflection;
 using TelerikAcademy.ForumSystem.Data.Model;
+using TestStack.FluentMVCTesting;
 
 namespace WebApplication1.Tests.Controllers
 {
@@ -21,34 +16,87 @@ namespace WebApplication1.Tests.Controllers
     public class JobControllerTest
     {
         [Test]
-        public void AdminApplies_ShouldReturnActionResultWithAppliesViewModel()
+        public void Reject_ShouldRedirectToIndexHome()
         {
-           /*  Arrange
-            var appliesService = new Mock<IAppliesService>();
-            var usersService = new Mock<IUsersService>();
-            var mapper = new Mock<IMapper>();
-            Guid guid = Guid.NewGuid();
-            List<Applies> queryResult = new List<Applies>()
+            // Arrange
+           
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedAppliesService = new Mock<IAppliesService>();
+
+            var controller = new JobController(mockedAppliesService.Object, mockedMapper.Object, mockedUsersService.Object);
+            Guid id = Guid.NewGuid();
+            var apply = new Applies
             {
-                new Applies
-                {
-                    Id = guid,
-                },
+                Id = id
             };
-            
+            var appliesCollection = new List<Applies>() { apply };
+            mockedAppliesService.Setup(c => c.GetAll()).Returns(appliesCollection.AsQueryable());
+            mockedAppliesService.Setup(c => c.Delete(apply));
 
-            appliesService.SetupGet(x => x.GetAll()).Returns(() => queryResult.Select(x => new Applies() { Id = guid }).AsQueryable());
-           // appliesService.SetupGet(x => x.GetAll().ProjectTo<AppliesViewModel>()).Returns(() => queryResult.Select(x => new AppliesViewModel() { Apply = new List<ApplyViewModel>() }).AsQueryable());
-           // appliesService.SetupGet(x => x.GetAll().ProjectTo<AppliesViewModel>().ToList()).Returns(() => queryResult.Select(x => new AppliesViewModel() { Apply = new List<ApplyViewModel>() }).ToList());
-            var controller = new JobController(appliesService.Object, mapper.Object, usersService.Object);
 
-            // Act
-            ViewResult result = controller.AdminApplies() as ViewResult;
-
-            // Assert 
-            Assert.IsNotNull(result);*/
+            //Act and Assert
+            controller
+                .WithCallTo(c => c.Reject(id))
+                .ShouldRedirectTo((HomeController c) => c.Index());
         }
         
-        
+        [Test]
+        public void AdminApplies_ShouldRenderAdminAppliesViewModel()
+        {
+            // Arrange
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<Applies, ApplyViewModel>();
+                cfg.CreateMap<ApplyViewModel, Applies>();
+            });
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedAppliesService = new Mock<IAppliesService>();
+
+            var controller = new JobController(mockedAppliesService.Object, mockedMapper.Object, mockedUsersService.Object);
+
+            var apply = new Applies
+            {
+                Id = Guid.NewGuid()
+            };
+            var appliesCollection = new List<Applies>() { apply };
+
+            mockedAppliesService.Setup(c => c.GetAll()).Returns(appliesCollection.AsQueryable());
+
+            //Act and Assert
+            controller
+                .WithCallTo(c => c.AdminApplies())
+                .ShouldRenderView("AdminApplies");
+        }
+
+        [Test]
+        public void ManageEmployees_ShouldRenderManageEmployeesViewModel()
+        {
+            // Arrange
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<User, UserViewModel>();
+                cfg.CreateMap<UserViewModel, User>();
+            });
+            var mockedMapper = new Mock<IMapper>();
+            var mockedUsersService = new Mock<IUsersService>();
+            var mockedAppliesService = new Mock<IAppliesService>();
+
+            var controller = new JobController(mockedAppliesService.Object, mockedMapper.Object, mockedUsersService.Object);
+
+            var user = new User
+            {
+                
+            };
+            var usersCollection = new List<User>() {  };
+
+            mockedUsersService.Setup(c => c.GetAll()).Returns(usersCollection.AsQueryable());
+
+            //Act and Assert
+            controller
+                .WithCallTo(c => c.ManageEmployees())
+                .ShouldRenderView("ManageEmployees");
+        }
     }
 }

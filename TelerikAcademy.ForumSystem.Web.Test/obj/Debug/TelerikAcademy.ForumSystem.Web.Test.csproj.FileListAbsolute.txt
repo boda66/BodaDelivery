@@ -24,7 +24,6 @@ C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\TelerikAcademy.ForumSystem.Services.dll
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\TelerikAcademy.ForumSystem.Web.dll
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\EntityFramework.dll
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\WebActivatorEx.dll
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\Microsoft.Owin.dll
@@ -69,3 +68,5 @@ C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\obj\Debug\TelerikAcademy.ForumSystem.Web.Test.dll
 C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\obj\Debug\TelerikAcademy.ForumSystem.Web.Test.pdb
+C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\TelerikAcademy.ForumSystem.Web.Test.dll.config
+C:\Users\boda66\Desktop\Project\BodaDelivery\TelerikAcademy.ForumSystem.Web.Test\bin\Debug\TestStack.FluentMVCTesting.dll

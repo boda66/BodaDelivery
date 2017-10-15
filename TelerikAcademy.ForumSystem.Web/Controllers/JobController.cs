@@ -31,7 +31,7 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
             Applies apply = new Applies() { Id = Guid.NewGuid(), UserName = User.Identity.Name, UserId = User.Identity.GetUserId() };
             this.appliesService.Add(apply);
 
-            return this.RedirectToAction("Index", "Manage");
+            return this.RedirectToAction("Index", "Home");
         }
         [Authorize]
         public ActionResult AdminApplies()
