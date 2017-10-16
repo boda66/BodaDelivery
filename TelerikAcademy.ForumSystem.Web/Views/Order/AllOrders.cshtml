@@ -4,7 +4,7 @@
 @{
     ViewBag.Title = "Orders Page";
 }
-@if (!User.IsInRole("Employee"))
+@if (!User.IsInRole("Employee")&& !User.IsInRole("Admin"))
 {
     Html.RenderAction("Login", "Account");
 }

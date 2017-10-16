@@ -48,6 +48,7 @@ namespace TelerikAcademy.ForumSystem.Web.Controllers
         {
             var order = this.ordersService
                 .GetAll()
+                .OrderBy(x=>x.UserName)
                 .ProjectTo<OrderViewModel>()
                 .ToList();
 
